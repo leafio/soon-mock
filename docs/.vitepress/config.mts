@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base:'/soon-mock/',
   title: "Soon Mock",
   description: "Soon Mock Docs",
   themeConfig: {
