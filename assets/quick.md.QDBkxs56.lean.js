@@ -1,0 +1,1 @@
+import{_ as s,c as i,o as a,a3 as n}from"./chunks/framework.-fJ2bRAZ.js";const g=JSON.parse('{"title":"Quick","description":"","frontmatter":{"outline":"deep"},"headers":[],"relativePath":"quick.md","filePath":"quick.md"}'),t={name:"quick.md"},e=n("",5),h=[e];function l(p,k,E,d,c,r){return a(),i("div",null,h)}const u=s(t,[["render",l]]);export{g as __pageData,u as default};
