@@ -1,6 +1,6 @@
 {
   "name": "soon-mock",
-  "version": "0.0.1-beta.10",
+  "version": "0.0.1-beta.11",
   "description": "a mock server can add apis in seconds with web UI",
   "license": "MIT",
   "scripts": {

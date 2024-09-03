@@ -5,7 +5,9 @@ outline: deep
 # Schema
 
 There are two types of Data, Json Object `{}` , Json Array `[]`.
-Where generate apis , it would be deferent by the Data type.
+Where generate apis , it would be deferent by the Data type. 
+
+![截图](./public//images/schema.png "schema.png")
 
 ## Schema Field
 
@@ -25,28 +27,31 @@ Could write a single line js code
 - Inner Function : `auto`
 
 ```ts
-auto.intId(); // would auto increase , like 1 , 2 , 3 ...
-auto.uuid(); //would return a new uuid
+auto.intId();
+// auto increase , like 1 , 2 , 3 ...
+auto.uuid();
+// return a new uuid
+
 // auto. stringId(prefix: string = '', length?: number)
-auto.stringId("soon-", 4); //would auto increase , like 'soon-0001','soon-0002' , ...
+auto.stringId("soon-", 4);
+// auto increase , like 'soon-0001','soon-0002' , ...
 ```
 
 - Third Party Npm Lib
   - @faker-js/faker (^8.3.1)
-  - dayjs (^^1.11.11)
+  - dayjs (^1.11.11)
   - mockjs (^1.1.0)
 
 ```ts
 /**faker */
 // could use any locale , like fakerFR , fakerAR ...
-faker.number.int() 
+faker.number.int();
 // Chinese (Simplified)
-fakerZH_CN.person.jobTitle()
+fakerZH_CN.person.jobTitle();
 
 /**dayjs */
-dayjs().format('YYYY-MM-DD') 
+dayjs().format("YYYY-MM-DD");
 
 /**mockjs */
-mockjs.Random.url('http')
-
+mockjs.Random.url("http");
 ```

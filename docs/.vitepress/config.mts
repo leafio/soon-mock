@@ -2,14 +2,13 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base:'/soon-mock/',
   title: "Soon Mock",
   description: "Soon Mock Docs",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      // { text: 'Examples', link: '/markdown-examples' }
     ],
 
     sidebar: [{
@@ -25,11 +24,15 @@ export default defineConfig({
         { text: 'API', link: '/api' },
         { text: 'Settings', link: '/settings' },
       ]
+    },{
+      text:'Example',
+      link:'/example'
     }
     ],
 
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ]
+
+    // socialLinks: [
+    //   { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+    // ]
   }
 })

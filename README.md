@@ -1,6 +1,12 @@
-# mock-soon
+# soon-mock
 
 #### a mock server can add apis in seconds with web UI
+
+> Mock as Real Server so Soon
+
+### [Document](https://leafio.github.io/soon-mock)
+
+### [Full Example](https://github.com/leafio/soon-admin-vue3)
 
 ### Installation/Getting Started
 
@@ -31,6 +37,7 @@ npm run mock
 ### Batch Generate APIs
 
 1. Switch to `Quick` Tab
+
 2. Input `JSON` / `JS` like this
    `user`, `book` are the schema name , just like table in database.
 
@@ -68,8 +75,11 @@ npm run mock
    In the action , the code is run in a Express server controller.  
    You can use `req` to get the request data, and use `res` to send the response.  
    Details usage you can read Express js Documentation.
+
 5. Switch to `Schema` Tab, you can modify the schema fields.  
    In the `Default Value` and `Mock Data` Input , you can write Single line js code.  
    The `faker` ,`mockjs` and `dayjs` are ready for use to create the mock data or value.
+
 6. Switch to `Data` Tab, the mock datas are listed.
+
 7. Switch to `Config` Tab, these are some default settings.
