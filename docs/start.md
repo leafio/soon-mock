@@ -28,7 +28,7 @@ yarn add soon-mock -D
 yarn mock
 ```
 
-- When the server started, you can just access http://localhost:8080 in your browser
+- When the server started, you can just access `http://localhost:8080` in your browser
 
 ## Add APIs
 You could read the next chapter `Quick`   .
