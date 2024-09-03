@@ -1,1 +1,0 @@
-import{_ as s,c as i,o as a,a3 as e}from"./chunks/framework.C1CQDQUL.js";const u=JSON.parse('{"title":"Schema","description":"","frontmatter":{"outline":"deep"},"headers":[],"relativePath":"schema.md","filePath":"schema.md"}'),n={name:"schema.md"},l=e("",10),t=[l];function h(p,k,d,o,r,c){return a(),i("div",null,t)}const g=s(n,[["render",h]]);export{u as __pageData,g as default};
