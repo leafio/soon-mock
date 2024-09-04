@@ -83,3 +83,8 @@ npm run mock
 6. Switch to `Data` Tab, the mock datas are listed.
 
 7. Switch to `Config` Tab, these are some default settings.
+
+
+
+## Contact Me
+Email: leafnote@outlook.com
