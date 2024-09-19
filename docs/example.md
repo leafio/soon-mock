@@ -4,8 +4,9 @@ outline: deep
 
 # Example
 
-### soon-admin-vue3
+### soon-admin
 
 This project has a full use demo for soon-mock
 
-https://github.com/leafio/soon-admin-vue3.git
+vue3 version：https://github.com/leafio/soon-admin-vue3    
+react version：https://github.com/leafio/soon-admin-react-nextjs 

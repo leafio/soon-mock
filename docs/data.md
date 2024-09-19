@@ -15,10 +15,10 @@ There are two types of Data, Json Object `{}` , Json Array `[]`
 - Could empty it to an empty array `[]`  
 
 
-![截图](./public//images/data-table.png "data.png")
+![截图](/images/data-table.png "data.png")
 
 ### Json Object
 
 - Could `edit` the json text and `save` it
 
-![截图](./public//images/data-json.png "data.png")
+![截图](/images/data-json.png "data.png")

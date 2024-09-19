@@ -7,7 +7,7 @@ outline: deep
 There are two types of Data, Json Object `{}` , Json Array `[]`.
 Where generate apis , it would be deferent by the Data type. 
 
-![截图](./public//images/schema.png "schema.png")
+![截图](/images/schema.png "schema.png")
 
 ## Schema Field
 

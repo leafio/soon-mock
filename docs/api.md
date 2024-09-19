@@ -6,7 +6,7 @@ outline: deep
 
 
 
-![截图](./public//images/api.png "api.png")
+![截图](/images/api.png "api.png")
 ## Authorization
 You could enable and specialize a string here. The string would pass to the middleware.
 When it enables , this route would add the auth middleware which runs before the action.

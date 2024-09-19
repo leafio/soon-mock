@@ -6,7 +6,7 @@ outline: deep
 
 Batch add APIs by simply input a json and customize some options.  
 
-![截图](./public//images/quick.png "quick.png")
+![截图](/images/quick.png "quick.png")
 
 - Input JSON / JS like this `user`, `book` are the schema name .
 
