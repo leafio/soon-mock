@@ -1,0 +1,1 @@
+import{_ as e,c as a,o,a3 as t}from"./chunks/framework.BbeggeaM.js";const f=JSON.parse('{"title":"Example","description":"","frontmatter":{"outline":"deep"},"headers":[],"relativePath":"example.md","filePath":"example.md"}'),r={name:"example.md"},n=t("",4),s=[n];function i(l,m,c,p,d,_){return o(),a("div",null,s)}const u=e(r,[["render",i]]);export{f as __pageData,u as default};

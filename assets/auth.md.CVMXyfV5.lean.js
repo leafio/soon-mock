@@ -1,0 +1,1 @@
+import{_ as s,c as i,o as a,a3 as t}from"./chunks/framework.BbeggeaM.js";const c=JSON.parse('{"title":"API Auth","description":"","frontmatter":{"outline":"deep"},"headers":[],"relativePath":"auth.md","filePath":"auth.md"}'),n={name:"auth.md"},h=t("",9),e=[h];function l(k,p,E,r,d,o){return a(),i("div",null,e)}const y=s(n,[["render",l]]);export{c as __pageData,y as default};

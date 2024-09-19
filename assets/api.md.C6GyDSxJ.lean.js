@@ -1,0 +1,1 @@
+import{_ as s,c as a,o as i,a3 as e,a4 as n}from"./chunks/framework.BbeggeaM.js";const g=JSON.parse('{"title":"API","description":"","frontmatter":{"outline":"deep"},"headers":[],"relativePath":"api.md","filePath":"api.md"}'),t={name:"api.md"},h=e("",17),l=[h];function p(k,d,r,o,c,E){return i(),a("div",null,l)}const u=s(t,[["render",p]]);export{g as __pageData,u as default};
