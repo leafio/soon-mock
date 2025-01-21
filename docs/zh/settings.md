@@ -6,30 +6,36 @@ outline: deep
 
 ## API 代理 API Agent
 
-在设置、并启用代理后，当客户端请求一个被禁用的 api 或者在 soon-mock 中没有定义，则会转发此请求至代理的服务端。
-当仅仅模拟部分 api 时，此设置会非常有效。如：在 soon-mock 中添加新功能的模拟 api,已有功能转发至测试服务器。
+### 何时会转发
 
-url 的拼接方式如下:
+- 启用 API 代理
+- 该 API 未定义，或被禁用
+
+### 转发至
 
 ```ts
-agentUrl + apiUrl;
+targetUrl + apiUrl;
 ```
 
-##  URL前缀 (Url Prefix)
+### 使用场景
 
-全局api前缀
+仅需模拟部分 api 时。如在 soon-mock 中添加新功能 api 的模拟，其他 api 则转发至测试服务器。
+
+## URL 前缀 (Url Prefix)
+
+全局 api 前缀
 
 ## Mock
 
-定义基本数据的默认mock方法
+定义基本数据的默认 mock 方法
 
 ## Schema
 
-These as settings when a new schema is added , it should be like.
+这里主要是一些新增 schema 时的默认配置项。
 
 ### 主键 Primary Keys
 
-这里是可能的主键key值，当通过json生成schema时，会依次匹配设置schema的主键字段
+这里是可能的主键 key 值，当通过 json 生成 schema 时，会依次匹配设置 schema 的主键字段
 
 ### res.success
 
@@ -48,16 +54,18 @@ These as settings when a new schema is added , it should be like.
 ```
 
 ### 权限
-权限函数是Express的一个中间件，会在启用权限的API前运行
+
+权限函数是 Express 的一个中间件，会在启用权限的 API 前运行
+
 ```ts
-(code) => (req, res, next) => {
+(auth_code) => (req, res, next) => {
   const token = req.headers.authorization
   if (token) {
     jwt.verify(token, 'JWT_SECRET', async (err, user) => {
-      if (err)  return res.sendStatus(403)    
+      if (err)  return res.sendStatus(403)
       const { username } = user
-      if (code) {
-        //** 可在这里写下你的自定义逻辑，比如该用户的role关联的权限是否拥有该 `code` */
+      if (auth_code) {
+        //** 可在这里写下你的自定义逻辑，比如该用户的role关联的权限是否拥有该 `auth_code` */
       }
       req.username = username
       next()
@@ -67,11 +75,12 @@ These as settings when a new schema is added , it should be like.
   }
 
 ```
-- 如果你使用 `jwt`权限，中间件代码正如上方列子。
-- 登录API中，`action`获取`token`的逻辑如下
-```ts
-res.success({token:jwt.sign({username:"admin"},"JWT_SECRET")})
-```
-- 也可以用自定义的虚拟验证逻辑替换。
 
-- Or you could write a total fake verification logic to replace it .
+- 如果你使用 `jwt`权限，中间件代码正如上方列子。
+- 登录 API 中，`action`获取`token`的逻辑如下
+
+```ts
+res.success({ token: jwt.sign({ username: "admin" }, "JWT_SECRET") });
+```
+
+- 也可以用自定义的虚拟验证逻辑替换。

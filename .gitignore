@@ -1,3 +1,13 @@
-node_modules
+
 docs/.vitepress/cache
 docs/.vitepress/dist
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+.yarn/install-state.gz
+yarn.lock
+package-lock.json
+pnpm-lock.yaml
+.yarnrc

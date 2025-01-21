@@ -4,10 +4,10 @@ outline: deep
 
 # Schema
 
-有2种类型的数据 (Data),Json键值对 (Json Object) `{}` , Json数组 (Json Array) `[]`.
-当生成api时，会根据不同的类型，生成不同的api
+有 2 种类型的数据,Json 键值对 `{}` , Json 数组 `[]`.
+当生成 api 时，会根据不同的类型，生成不同的 api
 
-![截图](/images/schema.png "schema.png")
+![截图](/images/zh/schema.png "schema.png")
 
 ## 模型字段
 
@@ -15,7 +15,7 @@ outline: deep
 - 数据类型
   - 基本 : `string` `int` `number` `boolean` `object`
   - 引用 : 引用其他的`schema`，或其他`schema`的某个字段`field`
-  - 由Json生成 : 根据json生成一个 `object` 的字段
+  - 由 Json 生成 : 根据 json 生成一个 `object` 的字段
 - 默认值 : 当添加数据时，对应的字段`field`没有值，则运行该处代码，生成默认值
 - 模拟数据 :当批量添加模拟数据时，运行该处代码，填充对应字段值
 - 描述: 一些备注信息
@@ -37,10 +37,12 @@ auto.stringId("soon-", 4);
 // 自动增加 , 如 'soon-0001','soon-0002' , ...
 ```
 
-- 第三方`npm`库
-  - @faker-js/faker (^8.3.1)
-  - dayjs (^1.11.11)
-  - mockjs (^1.1.0)
+- 第三方 `npm` 库
+  | lib 名称 | lib 版本 | 引用名称 |
+  | ------ | ------------- | --------------- |
+  | @faker-js/faker |^8.3.1| faker , fakerZH_CN , fakerFR ...|
+  | dayjs | ^1.11.11| dayjs |
+  | mockjs |^1.1.0 | mockjs |
 
 ```ts
 /**faker */

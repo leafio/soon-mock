@@ -5,9 +5,9 @@ outline: deep
 # Schema
 
 There are two types of Data, Json Object `{}` , Json Array `[]`.
-Where generate apis , it would be deferent by the Data type. 
+Where generate apis , it would be deferent by the Data type.
 
-![截图](/images/schema.png "schema.png")
+![截图](/images/en/schema.png "schema.png")
 
 ## Schema Field
 
@@ -38,9 +38,11 @@ auto.stringId("soon-", 4);
 ```
 
 - Third Party Npm Lib
-  - @faker-js/faker (^8.3.1)
-  - dayjs (^1.11.11)
-  - mockjs (^1.1.0)
+  | Lib Name | Lib Version | Reference Name |
+  | ------ | ------------- | --------------- |
+  | @faker-js/faker |^8.3.1| faker , fakerZH_CN , fakerFR ...|
+  | dayjs | ^1.11.11| dayjs |
+  | mockjs |^1.1.0 | mockjs |
 
 ```ts
 /**faker */

@@ -4,13 +4,14 @@ outline: deep
 
 # API
 
+![截图](/images/en/api.png "api.png")
 
-
-![截图](/images/api.png "api.png")
 ## Authorization
+
 You could enable and specialize a string here. The string would pass to the middleware.
 When it enables , this route would add the auth middleware which runs before the action.
 The auth middleware could be set in Settings API Section
+
 ## Request
 
 - ### Params
@@ -30,10 +31,11 @@ router.method("/url", async (req, res) => {
 });
 ```
 
-Obviously, you could use `req` to get the Request data ,and use `res` to send the Response 
-   There two extra functions addon to `res`,which could be set in Settings API Section 
-- `res.success()`  to send a success response  
-- `res.error()`    to send a fail response  
+Obviously, you could use `req` to get the Request data ,and use `res` to send the Response
+There two extra functions addon to `res`,which could be set in Settings API Section
+
+- `res.success()` to send a success response
+- `res.error()` to send a fail response
 
 There are also many Functions and npm libs which can be used here.
 
@@ -59,11 +61,13 @@ There are also many Functions and npm libs which can be used here.
 ```
 
 - Third Party Npm Lib
-  - @faker-js/faker (^8.3.1)
-  - dayjs (^1.11.11)
-  - mockjs (^1.1.0)
-  - jsonwebtoken (^9.0.2)
-  - svg-captcha ("^1.4.0")
+  | Lib Name | Lib Version | Reference Name |
+  | ------ | ------------- | --------------- |
+  | @faker-js/faker |^8.3.1| faker , fakerZH_CN , fakerFR ...|
+  | dayjs | ^1.11.11| dayjs |
+  | mockjs |^1.1.0 | mockjs |
+  | jsonwebtoken | ^9.0.2 | jwt |
+  | svg-captcha | ^1.4.0| svgCaptcha |
   ```ts
   //create captcha
   const captcha = svgCaptcha.create({
@@ -80,3 +84,7 @@ There are also many Functions and npm libs which can be used here.
 ## Response
 
 At present ,it's only show what the response data structure is .
+
+## File Upload
+You can upload file like the image below.
+![file](/images/en/file.png "file.png")

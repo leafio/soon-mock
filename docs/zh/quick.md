@@ -6,7 +6,7 @@ outline: deep
 
 仅需输入`json`,便可批量生成 API。
 
-![截图](/images/quick.png "quick.png")
+![截图](/images/zh/quick.png "quick.png")
 
 - 输入如下`JSON` / `JS` ， `user`, `book` 为 schema 的名称 .
 
@@ -34,6 +34,7 @@ outline: deep
   | post | /api/user | 添加 user |
   | put | /api/user/:id | 修改 user|
   | delete | /api/user/:id | 删除 user |
+  | | | |
   | get | /api/book | 获取 book 列表 |
   | get | /api/book/:id | 获取 book 详情 |
   | post | /api/book | 添加 book |

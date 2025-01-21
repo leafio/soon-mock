@@ -15,10 +15,10 @@ outline: deep
 - 可以清空数据，使之变为空数组 `[]`  
 
 
-![截图](/images/data-table.png "data.png")
+![截图](/images/zh/data-table.png "data.png")
 
 ### JSON键值对
 
 - 可以 `编辑` 和 `保存` JSON键值对数据。
 
-![截图](/images/data-json.png "data.png")
+![截图](/images/zh/data-json.png "data.png")

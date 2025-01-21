@@ -4,16 +4,17 @@ outline: deep
 
 # API
 
+![截图](/images/zh/api.png "api.png")
 
-
-![截图](/images/api.png "api.png")
 ## 权限 Authorization
-可以启用权限，并设置该api的权限`code`,此`code`会传递至上述中间件中，然后进行验证。
+
+可以启用权限，并设置该 api 的权限`auth_code`,此`auth_code`会传递至`settings`中的`权限`函数，然后进行验证。
+
 ## 请求 Request
 
-- ### url参数 Params
+- ### url 参数 Params
   输入类似 /:key 的字符串，会添加一个参数
-- ### url查询参数 Query
+- ### url 查询参数 Query
   可以添加 `string` `number` `int` 或 对应数组 `array`的查询参数
 - ### 主体 Body
   先输入 `字段名称`, 然后选择 `输入类型`
@@ -28,15 +29,16 @@ router.method("/url", async (req, res) => {
 });
 ```
 
-显然, 你可使用`req`获取请求数据 ,使用`res`发送响应 
-   下列函数会添加至 `res`下，,可在 Settings API 区域中设置 
-- `res.success()` 发送成功响应 
-- `res.error()`   发送失败响应  
+显然, 你可使用`req`获取请求数据 ,使用`res`发送响应
+下列函数会添加至 `res`下，,可在 Settings API 区域中设置
+
+- `res.success()` 发送成功响应
+- `res.error()` 发送失败响应
 
 还有很多函数和`npm`包也可在此使用.
 
 - 内部函数 : `auto` (详情见 schema 章节中的描述)
-- 内部函数 : `action` (是一个异步(async)函数 )
+- 内部函数 : `action` (是一个 **异步** 函数 )
 
 ```ts
     /** SchemaName 要替换成真实的 schema 名称 */
@@ -57,11 +59,13 @@ router.method("/url", async (req, res) => {
 ```
 
 - 第三方 `npm` 库
-  - @faker-js/faker (^8.3.1)
-  - dayjs (^1.11.11)
-  - mockjs (^1.1.0)
-  - jsonwebtoken (^9.0.2)
-  - svg-captcha ("^1.4.0")
+  | lib 名称 | lib 版本 | 引用名称 |
+  | ------ | ------------- | --------------- |
+  | @faker-js/faker |^8.3.1| faker , fakerZH_CN , fakerFR ...|
+  | dayjs | ^1.11.11| dayjs |
+  | mockjs |^1.1.0 | mockjs |
+  | jsonwebtoken | ^9.0.2 | jwt |
+  | svg-captcha | ^1.4.0| svgCaptcha |
   ```ts
   // 创建验证码图片
   const captcha = svgCaptcha.create({
@@ -77,4 +81,9 @@ router.method("/url", async (req, res) => {
 
 ## 响应 Response
 
-目前 ,此处的数据解构仅有展示作用，后续会添加生成 ts 调用的功能 .
+目前 ,此处的数据结构仅有展示作用，后续会添加生成 ts 调用的功能 .
+
+## 文件上传
+
+你可以按下图设置上传 api
+![file](/images/zh/file.png "file.png")
